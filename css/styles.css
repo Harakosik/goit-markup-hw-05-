@@ -52,6 +52,7 @@ ul {
   --current-color-dark: #212121;
   --light-gray-backg: #f5f4fa;
   --footer-primary-color: rgba(255, 255, 255, 0.6);
+  --transition-dur-and-func: 250ms linear;
 }
 
 body {
@@ -111,6 +112,7 @@ body {
 .header-link:hover,
 :focus {
   color: var(--blue-logo-color);
+  transition: var(--transition-dur-and-func);
 }
 .header-item .current {
   color: var(--blue-logo-color);
@@ -133,6 +135,7 @@ body {
 .header-phone:hover,
 .header-phone:focus {
   color: var(--blue-logo-color);
+  transition: var(--transition-dur-and-func);
 }
 
 .header-mail {
@@ -258,6 +261,7 @@ body {
 .hero-btn:hover,
 .hero-btn:focus {
   background: #138cef;
+  transition: var(--transition-dur-and-func);
 }
 
 .hero {
@@ -380,6 +384,34 @@ body {
 }
 /* ======== Section about ======== */
 
+/* ======== Section about Lable======== */
+.containerr {
+  position: relative;
+}
+.wrapper {
+  position: relative;
+  margin: 0 0;
+}
+.lable1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  width: 370px;
+  height: 70px;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0%;
+}
+/* ======== Section about Lable======== */
 /* ======== Section team ========= */
 
 img {
@@ -456,10 +488,12 @@ img {
 .farbe:hover .logo-client,
 .farbe:focus .logo-client {
   fill: var(--blue-logo-color);
+  transition: var(--transition-dur-and-func);
 }
 .client-link-item:hover,
 .client-link-item:focus {
   border-color: var(--blue-logo-color);
+  transition: var(--transition-dur-and-func);
 }
 .farbe {
   display: flex;
@@ -495,6 +529,7 @@ img {
 .social-list-link:hover .icon-svg,
 .social-list-link:focus .icon-svg {
   fill: var(--white-color);
+  transition: var(--transition-dur-and-func);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -512,6 +547,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: var(--transition-dur-and-func);
 }
 
 /* ---------- S V G ---------------*/
@@ -605,6 +641,7 @@ footer {
   height: 44px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  transition: var(--transition-dur-and-func);
 }
 .footer-positions {
   display: flex;
@@ -647,7 +684,39 @@ footer {
 
   color: var(--grey-color);
 }
+/* ======== portfolio ============== */
+/* ======== overlay portfolio bilder ============== */
+.img-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.border:hover .overlay,
+.border:focus .overlay {
+  transform: translateY(0%);
+}
+.overlay {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
 
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  background: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+}
+/* ======== overlay portfolio bilder ============== */
 /* ======== footer section ========= */
 
 .logo-link-footer {
@@ -665,6 +734,8 @@ footer {
   color: var(--blue-logo-color);
 }
 .footer {
+  max-width: 1600px;
+  margin: auto;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -695,6 +766,8 @@ footer {
 /* ======== portfolio ============== */
 
 .header {
+  max-width: 1600px;
+  margin: auto;
   border-bottom: 1px solid #ececec;
 }
 
@@ -708,11 +781,13 @@ footer {
 }
 .border {
   display: block;
+  cursor: pointer;
 }
 .border:hover,
 .border:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: var(--transition-dur-and-func);
 }
 
 .list-but {
@@ -768,6 +843,7 @@ footer {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition: var(--transition-dur-and-func);
 }
 
 .button .current {
@@ -793,6 +869,7 @@ footer {
 .web:focus {
   color: #ffffff;
   background: var(--blue-logo-color);
+  transition: var(--transition-dur-and-func);
 }
 
 .app {
@@ -816,6 +893,7 @@ footer {
 .app:focus {
   color: #ffffff;
   background: var(--blue-logo-color);
+  transition: var(--transition-dur-and-func);
 }
 
 .dis {
@@ -839,6 +917,7 @@ footer {
 .dis:focus {
   color: #ffffff;
   background: var(--blue-logo-color);
+  transition: var(--transition-dur-and-func);
 }
 
 .markt {
@@ -861,6 +940,7 @@ footer {
 .markt:focus {
   color: #ffffff;
   background: var(--blue-logo-color);
+  transition: var(--transition-dur-and-func);
 }
 
 /* наши возможности */
@@ -878,3 +958,38 @@ footer {
 }
 
 /* ======== portfolio ============== */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.modal {
+  width: 528px;
+  height: 581px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
