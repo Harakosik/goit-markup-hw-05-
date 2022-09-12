@@ -780,6 +780,7 @@ footer {
   text-align: center;
 }
 .border {
+  text-decoration: none;
   display: block;
   cursor: pointer;
 }
